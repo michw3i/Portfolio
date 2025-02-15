@@ -1,0 +1,316 @@
+#welcome-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+	background-color: #E6E6E9;
+	padding: 20px;
+}
+/* background of home page */
+
+#welcome-section h1 {
+	font-size: 7rem;
+	font-weight: bold;
+	margin-bottom: 5px;
+	line-height: 1.2;
+	font-family: 'New Romantics', sans-serif;
+   	letter-spacing: 10px;
+	color: #000000;
+	position: relative;
+	z-index: 1;
+}
+
+#welcome-section h1 ::before {
+	content: "Michelle Wei";
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	color: rgba(128,128,136, .5);
+	filter: blur(15px);
+	z-index:-1 ;
+}
+
+/* my name in home */
+
+#welcome-section p {
+	font-size: 1.0rem;
+	color: #66666E;
+	font-family: Georgia, serif;
+	font-style: italic;
+	margin-top: 5px;
+	line-height: 1.2;
+}
+
+
+
+#navbar {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #C0C0C5;
+	padding: 15px 0;
+	box-shadow: 0px 100px 100px rgba(192, 192, 197, 1);
+}
+
+/* top bar background */
+
+
+ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* list in top bar */
+
+#navbar li {
+	list-style: none;
+	margin: 0 15px;
+}
+
+#navbar a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #66666E;
+	transition: color 0.3s;
+}
+
+#navbar a:hover{
+	color:#000000;
+
+}
+
+/* list in top bar */
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	font-family: Georgia, serif;
+	letter-spacing: 2.5px;
+	margin: 0;
+	padding: 0;
+	background-color:#E6E6E9;
+}
+
+
+#about{
+	background:#E6E6E9;
+	padding: 60px 20px;
+	position: relative;
+	text-align: center;
+}
+
+#about h1 {
+	font-size: 6rem;
+	margin-bottom:30px;
+	color: #333337;
+	position: relative;
+	z-index: 1;
+}
+
+#about h1::before{
+	content: "About Me";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: rgba(128,128,136,.9);
+	filter: blur(15px);
+	z-index: -1;
+}
+
+#about p {
+	line-height: 1.8;
+	margin-top: -10px;
+	max-width: 800px;
+	font-size: 1.2rem;
+	border-radius: 10px;
+	text-align: center;
+	color: #4D4D53;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#projects {
+	background: #E6E6E9;
+	padding: 60px 20px;
+	text-align: center;
+	position: relative;
+}
+
+#projects h1 {
+	font-size: 6rem;
+	margin-bottom: 10px;
+	color: #333337;
+	text-align: left;
+	font-size: 6rem;
+	padding-right: 150px;
+	padding-left: 150px;
+	position: relative;
+	z-index: 1;
+}
+
+#projects h2{
+	font-family: 'New Romantics', sans-serif;
+	font-size: 2rem;
+	text-decoration: underline;
+	margin-bottom: 5px;
+	padding: 0 200px;
+	text-align: left;
+	
+}
+
+
+#projects h1::before{
+	content: "Projects";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-right: 150px;
+	padding-left: 150px;
+	color: rgba(128, 128, 136, 100);
+	filter: blur(15px);
+	z-index: -1;
+
+}
+
+
+
+#project img {
+	width: 200px;
+	height: 200px;
+}
+
+.project {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
+	position: relative;
+	max-width: 900px;
+	margin:10px auto;
+	padding: 15px;
+}
+
+
+.project img {
+	width: 300px;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+}
+
+.project iframe {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	left: -200px;
+	top: 10px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+	opacity: 0.97;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project iframe:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+
+
+.project-text p {
+    max-width: 900px; 
+    width: 100%; 
+    line-height: 1.4;
+    text-align: atuo;
+    white-space: normal;
+}
+
+
+#resume {
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+
+#resume h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#resume p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.resume-button {
+    display: inline-block;
+    background-color: #66666E; 
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+    background-color: #000000; 
+}
+
+
+
+
+
+
+
+
+#contact {
+	text-align: center;
+	padding: 50px 20px;
+}
+
+#contact h1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+.contact-info p {
+	font-size: 1.2em;
+	margin: 10px 0;
+	color: #66666E;
+	text-decoration: none;
+}
+
+.contact-info a {
+	color: #66666E;
+	text-decoration: none;
+}
+
+.contact-info a:visited {
+	color: #66666E;
+}
+
+.contact-info a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+
+
